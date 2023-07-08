@@ -35,7 +35,7 @@ $ make clean # Limpa os arquivos objetos do programa
 Em caso de duvidas, basta executar o comando `make help` para ver os comandos disponíveis.
 
 ## __Requisitos:__
-+ Compilador g++.
++ Compilador G++.
 
 ## __Observações:__
 
