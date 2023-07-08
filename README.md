@@ -39,6 +39,6 @@ Em caso de duvidas, basta executar o comando `make help` para ver os comandos di
 
 ## __Observações:__
 
-* O programa foi desenvolvido e testado em um ambiente Linux, portanto o Makefile não irá funcionar.
+* O programa foi desenvolvido e testado em um ambiente Linux, portanto o Makefile não irá funcionar em um ambiente Windows/MacOS.
 
 * O programa foi desenvolvido utilizando a linguagem C++ e compilado com o compilador G++.
