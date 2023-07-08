@@ -7,6 +7,6 @@ void ProductOwner::cadastrarTarefa(int id)
 {
 }
 
-void ProductOwner::priorizarTarefas(int id)
+void ProductOwner::priorizarTarefa(int id)
 {
 }

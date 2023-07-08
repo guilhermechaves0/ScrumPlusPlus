@@ -28,7 +28,7 @@ class StakeHolder
         virtual void listTasksByStatus(const std::string &status) = 0;
 
         // productOwner
-        virtual void priorizarTarefas(int id) = 0;
+        virtual void priorizarTarefa(int id) = 0;
 
         // developer e tester
         virtual void executarTarefa(int id) = 0;
