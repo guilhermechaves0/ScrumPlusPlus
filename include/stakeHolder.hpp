@@ -22,7 +22,7 @@ class StakeHolder
         std::vector<int> getIds() const;
 
         // scrumMaster e productOwner
-        virtual void cadastrarTarefa(int id) = 0;
+        virtual void cadastrarTarefa(int id, std::vector<Tasks> &tasks) = 0;
 
         // scrumMaster
         virtual void listTasksByStatus(const std::string &status) = 0;
