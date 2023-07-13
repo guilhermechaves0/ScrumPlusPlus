@@ -37,11 +37,7 @@ class StakeHolder
 
         virtual void aprovarTarefa() = 0;
 
-        void finalizarTarefa(std::map<int, Tasks> tasks);
-
-        void listarTarefas(std::map<int, Tasks> tasks);
-
-        void aceitarTarefa(std::map<int, Tasks> tasks);
+        std::string getStatusString(Tasks::Status status);
 
 /*         // scrumMaster e productOwner
         virtual void cadastrarTarefa(int id, std::vector<Tasks> &tasks) = 0;
