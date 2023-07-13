@@ -5,12 +5,21 @@
 
 class Tester : public StakeHolder
 {
+    private:
+        std::string nome;
+
     public:
         Tester(const std::string& nome, const std::string& projeto, const std::string& team);
-        
-        void executarTarefa(int id) override;
-        void testarTarefa(int id) override;
-        void aprovarTarefa(int id) override;
+        ~Tester();
+
+        std::string getNome() const;
+        void setNome();
+
+        void executarTarefa() override;
+
+        void testarTarefa() override;
+
+        void aprovarTarefa() override;
 };
 
 #endif // TESTER_HPP

@@ -13,11 +13,24 @@ class Tasks
 
         // getters and setters
         int getId() const;
+
         std::string getNome() const;
+
+        std::string getDescricao() const;
+        void setDescricao(std::string descricao);
+
         std::string getDataCriacao() const;
+
         std::string getDataEntrega() const;
-        std::string getPrioridade() const;
+
+        std::string getPrioridade();
+        void setPrioridade(std::string prioridade);
+
+        std::string getResponsavel();
+        void setResponsavel(std::string responsavel);
+
         Status getStatus() const;
+        void setStatus(std::string status);
 
         // methods
         void setStatus(Status status);
@@ -42,9 +55,11 @@ class Tasks
     private:
         int id;
         std::string nome;
+        std::string descricao;
         std::string dataCriacao;
         std::string dataEntrega;
         std::string prioridade;
+        std::string responsavel;
         Status status;
 };
 

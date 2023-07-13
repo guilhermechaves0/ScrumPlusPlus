@@ -3,6 +3,8 @@
 
 #include <string>
 #include <vector>
+#include <map>
+#include "tasks.hpp"
 
 class StakeHolder
 {
@@ -10,18 +12,38 @@ class StakeHolder
         std::string nome;
         std::string projeto;
         std::string team;
-        std::vector<int> ids;
+        static std::map<int, Tasks> tasks;
+        /*std::vector<int> ids;*/
 
     public:
+        StakeHolder();
         StakeHolder(const std::string& nome, const std::string& projeto, const std::string& team);
-        virtual ~StakeHolder() = default;
+        ~StakeHolder();
 
         std::string getNome() const;
         std::string getProjeto() const;
         std::string getTeam() const;
-        std::vector<int> getIds() const;
+        /* std::vector<int> getIds() const; */
 
-        // scrumMaster e productOwner
+        virtual void cadastrarTarefa () = 0;
+
+        void listTasksByStatus();
+
+        virtual void priorizarTarefa() = 0;
+
+        virtual void executarTarefa() = 0;
+
+        virtual void testarTarefa() = 0;
+
+        virtual void aprovarTarefa() = 0;
+
+        void finalizarTarefa(std::map<int, Tasks> tasks);
+
+        void listarTarefas(std::map<int, Tasks> tasks);
+
+        void aceitarTarefa(std::map<int, Tasks> tasks);
+
+/*         // scrumMaster e productOwner
         virtual void cadastrarTarefa(int id, std::vector<Tasks> &tasks) = 0;
 
         // scrumMaster
@@ -36,6 +58,8 @@ class StakeHolder
         // tester
         virtual void testarTarefa(int id) = 0;
         virtual void aprovarTarefa(int id) = 0;
+*/
+
 };
 
 #endif // STACKHOLDER_HPP
