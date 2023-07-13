@@ -2,12 +2,14 @@
 #define TASKS_HPP
 
 #include <string>
+#include <stdexcept>
 
 class Tasks
 {
     public:
         // constructor and destructor
-        Tasks(int id, const std::string& nome, const std::string& dataCriacao, const std::string& dataEntrega, const std::string& prioridade);
+        //Tasks(int id, const std::string& nome, const std::string& dataCriacao, const std::string& dataEntrega, const std::string& prioridade);
+        Tasks();
         ~Tasks();
         enum class Status {Backlog, ToDo, Doing, Testing, Done};
 
@@ -30,11 +32,10 @@ class Tasks
         void setResponsavel(std::string responsavel);
 
         Status getStatus() const;
-        void setStatus(std::string status);
 
         // methods
-        void setStatus(Status status);
-        static Status convertToStatus(const std::string& statusStr) {
+        void setStatus(std::string status);
+        /**static Status convertStatus(std::string& statusStr) {
         if (statusStr == "Backlog")
             return Status::Backlog;
         else if (statusStr == "ToDo")
@@ -50,7 +51,7 @@ class Tasks
             // For example, you can throw an exception or return a default status
             throw std::runtime_error("Invalid status string");
         }
-    }
+    }**/
 
     private:
         int id;

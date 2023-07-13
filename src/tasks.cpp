@@ -4,7 +4,7 @@
 #include <string>
 
 // constructor and destructor
-Tasks::Tasks(int id, const std::string& nome, const std::string& dataCriacao, const std::string& dataEntrega, const std::string& prioridade)
+/* Tasks::Tasks(int id, const std::string& nome, const std::string& dataCriacao, const std::string& dataEntrega, const std::string& prioridade)
 {
     this->id = id;
     this->nome = nome;
@@ -12,7 +12,9 @@ Tasks::Tasks(int id, const std::string& nome, const std::string& dataCriacao, co
     this->dataEntrega = dataEntrega;
     this->prioridade = prioridade;
     this->status = Status::Backlog;
-}
+} */
+
+Tasks::Tasks() {}
 
 Tasks::~Tasks(){}
 

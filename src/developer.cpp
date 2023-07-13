@@ -3,11 +3,9 @@
 
 Developer::Developer()
 {
-    std::cout << "Developer criado" << std::endl;
 }
 Developer::~Developer()
 {
-    std::cout << "Developer destruído" << std::endl;
 }
 
 std::string Developer::getNome() const

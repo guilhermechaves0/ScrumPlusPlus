@@ -23,6 +23,18 @@ std::string StakeHolder::getTeam() const
     return team;
 }
 
+void StakeHolder::cadastrarTarefa()
+{
+    std::string nome;
+    std::cout << "Digite o nome da tarefa: ";
+    std::cin >> nome;
+
+    std::string descricao;
+    std::cout << "Digite a descrição da tarefa: ";
+    std::cin >> descricao;
+
+}
+
 void StakeHolder::listTasksByStatus()
 {
     std::cout << "Selecione o status da tarefa que deseja listar: " << std::endl;

@@ -8,8 +8,15 @@ class ScrumMaster : public StakeHolder
 {
     public:
         ScrumMaster(const std::string& nome, const std::string& projeto, const std::string& team);
-        
-        void cadastrarTarefa() override;
+        ~ScrumMaster();
+
+        void priorizarTarefa() override;
+
+        void executarTarefa() override;
+
+        void testarTarefa() override;
+
+        void aprovarTarefa() override;
 
 };
 #endif // SCRUMMASTER_HPP

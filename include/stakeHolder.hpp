@@ -6,7 +6,7 @@
 #include <map>
 #include "tasks.hpp"
 
-class StakeHolder
+class StakeHolder : public Tasks
 {
     protected:
         std::string nome;
@@ -25,7 +25,7 @@ class StakeHolder
         std::string getTeam() const;
         /* std::vector<int> getIds() const; */
 
-        virtual void cadastrarTarefa () = 0;
+        void cadastrarTarefa ();
 
         void listTasksByStatus();
 
