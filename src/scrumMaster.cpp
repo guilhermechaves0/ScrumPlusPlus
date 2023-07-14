@@ -1,14 +1,25 @@
-#include "scrumMaster.hpp"
-#include "funcs.cpp"
+#include "../include/scrumMaster.hpp"
 #include "tasks.hpp"
 
-ScrumMaster::ScrumMaster(const std::string& nome, const std::string& projeto, const std::string& team) : StakeHolder(nome, projeto, team){}
-
-void ScrumMaster::cadastrarTarefa(int id, std::vector<Tasks> &tasks)
+ScrumMaster::ScrumMaster(const std::string& nome, const std::string& projeto, const std::string& team) : StakeHolder(nome, projeto, team)
+{
+}
+ScrumMaster::~ScrumMaster()
 {
 }
 
-void ScrumMaster::listTasksByStatus(const std::string &status)
+void ScrumMaster::priorizarTarefa()
 {
 }
 
+void ScrumMaster::executarTarefa()
+{
+}
+
+void ScrumMaster::testarTarefa()
+{
+}
+
+void ScrumMaster::aprovarTarefa()
+{
+}
