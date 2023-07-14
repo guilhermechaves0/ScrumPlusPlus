@@ -1,4 +1,4 @@
-#include "scrumMaster.hpp"
+#include "../include/scrumMaster.hpp"
 #include "tasks.hpp"
 
 ScrumMaster::ScrumMaster(const std::string& nome, const std::string& projeto, const std::string& team) : StakeHolder(nome, projeto, team)

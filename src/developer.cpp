@@ -1,4 +1,4 @@
-#include "developer.hpp"
+#include "../include/developer.hpp"
 #include <iostream>
 
 Developer::Developer()
@@ -23,8 +23,13 @@ void Developer::executarTarefa()
     std::cout << "Digite o ID da tarefa que deseja executar: ";
     int id;
     std::cin >> id;
-    
+    /* 
     this->tasks[id].setStatus("Doing");
 
     this->tasks[id].setResponsavel(this->getNome());
+    */
+
+    StakeHolder::tasks[id].setStatus("Doing");
+
+    StakeHolder::tasks[id].setResponsavel(this->getNome());
 }

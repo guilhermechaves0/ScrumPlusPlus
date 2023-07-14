@@ -34,11 +34,19 @@ doc:
 test: $(TARGET)
 	./$(TARGET) < $(TEST_DIR)/test.txt
 
+# Regras para criar diretórios
+mkdir:
+	mkdir -p $(BIN_DIR)
+	mkdir -p $(OBJ_DIR)
+	mkdir -p $(DOC_DIR)
+	mkdir -p $(TEST_DIR)
+
 # Regras de limpeza
 clean:
 	rm -f $(OBJ_DIR)/*
 	rm -f $(BIN_DIR)/*
 	rm -f $(DOC_DIR)/*
+	rm -f $(TEST_DIR)/*
 
 # Regras auxiliares
 help:

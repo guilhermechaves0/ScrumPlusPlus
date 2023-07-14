@@ -2,6 +2,7 @@
 #define DEVELOPER_HPP
 
 #include "stakeHolder.hpp"
+#include "tasks.hpp"
 #include <queue>
 #include <string>
 #include <map>

@@ -1,5 +1,5 @@
-#ifndef STACKHOLDER_HPP
-#define STACKHOLDER_HPP
+#ifndef STAKEHOLDER_HPP
+#define STAKEHOLDER_HPP
 
 #include <string>
 #include <vector>
@@ -8,7 +8,7 @@
 
 class StakeHolder : public Tasks
 {
-    protected:
+    private:
         std::string nome;
         std::string projeto;
         std::string team;
@@ -16,6 +16,7 @@ class StakeHolder : public Tasks
         /*std::vector<int> ids;*/
 
     public:
+
         StakeHolder();
         StakeHolder(const std::string& nome, const std::string& projeto, const std::string& team);
         ~StakeHolder();
@@ -58,4 +59,4 @@ class StakeHolder : public Tasks
 
 };
 
-#endif // STACKHOLDER_HPP
+#endif // STAKEHOLDER_HPP

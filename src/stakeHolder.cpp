@@ -1,4 +1,4 @@
-#include "stakeHolder.hpp"
+#include "../include/stakeHolder.hpp"
 #include <iostream>
 
 StakeHolder::StakeHolder() {
@@ -22,6 +22,8 @@ std::string StakeHolder::getTeam() const
 {
     return team;
 }
+
+std::map<int, Tasks> StakeHolder::tasks;
 
 void StakeHolder::cadastrarTarefa()
 {
