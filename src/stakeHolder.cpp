@@ -3,7 +3,7 @@
 
 StakeHolder::StakeHolder() {
 };
-StakeHolder::StakeHolder(const std::string& nome, const std::string& projeto, const std::string& team) : nome(nome), projeto(projeto), team(team){
+StakeHolder::StakeHolder(const std::string& nome, const std::string& descricao, const std::string& prioridade, const std::string& responsavel) : nome(nome), descricao(descricao), prioridade(prioridade), responsavel(responsavel) {
 };
 StakeHolder::~StakeHolder() {
 };
@@ -13,28 +13,29 @@ std::string StakeHolder::getNome() const
     return nome;
 }
 
-std::string StakeHolder::getProjeto() const
+std::string StakeHolder::getDescricao() const
 {
-    return projeto;
+    return descricao;
 }
 
-std::string StakeHolder::getTeam() const
+/*std::string StakeHolder::getPrioridade() const
 {
-    return team;
+    return prioridade;
 }
+
+std::string StakeHolder::getResponsavel() const
+{
+    return responsavel;
+}*/
 
 std::map<int, Tasks> StakeHolder::tasks;
 
-void StakeHolder::cadastrarTarefa()
+void StakeHolder::cadastrarTarefa(int id, std::vector<Tasks>& tarefas)
 {
-    std::string nome;
-    std::cout << "Digite o nome da tarefa: ";
-    std::cin >> nome;
-
-    std::string descricao;
-    std::cout << "Digite a descrição da tarefa: ";
-    std::cin >> descricao;
-
+    for (const Tasks& task : tarefas)
+    {
+        tasks.insert(std::make_pair(task.getId(), task));
+    }
 }
 
 void StakeHolder::listTasksByStatus()

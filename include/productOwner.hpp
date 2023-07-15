@@ -6,7 +6,7 @@
 class ProductOwner : public StakeHolder
 {
     public:
-        ProductOwner(const std::string& nome, const std::string& projeto, const std::string& team);
+        ProductOwner(const std::string& nome, const std::string& descricao, const std::string& prioridade, const std::string& responsavel);
         ~ProductOwner();
 
         void priorizarTarefa() override;

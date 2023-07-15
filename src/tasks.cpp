@@ -4,15 +4,9 @@
 #include <string>
 
 // constructor and destructor
-/* Tasks::Tasks(int id, const std::string& nome, const std::string& dataCriacao, const std::string& dataEntrega, const std::string& prioridade)
+Tasks::Tasks(const std::string& nome, const std::string& descricao, const std::string& prioridade, const std::string& responsavel) : nome(nome), descricao(descricao), prioridade(prioridade), responsavel(responsavel)
 {
-    this->id = id;
-    this->nome = nome;
-    this->dataCriacao = dataCriacao;
-    this->dataEntrega = dataEntrega;
-    this->prioridade = prioridade;
-    this->status = Status::Backlog;
-} */
+}
 
 Tasks::Tasks() {}
 
@@ -23,10 +17,18 @@ int Tasks::getId() const
 {
     return this->id;
 }
+void Tasks::setId(int id)
+{
+    this->id = id;
+}
 
 std::string Tasks::getNome() const
 {
     return this->nome;
+}
+void Tasks::setNome(std::string nome)
+{
+    this->nome = nome;
 }
 
 std::string Tasks::getDescricao() const
@@ -48,7 +50,7 @@ std::string Tasks::getDataEntrega() const
     return this->dataEntrega;
 }
 
-std::string Tasks::getPrioridade()
+std::string Tasks::getPrioridade() const
 {
     return this->prioridade;
 }
@@ -57,7 +59,7 @@ void Tasks::setPrioridade(std::string prioridade)
     this->prioridade = prioridade;
 }
 
-std::string Tasks::getResponsavel()
+std::string Tasks::getResponsavel() const
 {
     return this->responsavel;
 }

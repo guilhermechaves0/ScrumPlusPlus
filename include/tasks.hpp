@@ -8,28 +8,35 @@ class Tasks
 {
     public:
         // constructor and destructor
-        //Tasks(int id, const std::string& nome, const std::string& dataCriacao, const std::string& dataEntrega, const std::string& prioridade);
+        Tasks(const std::string& nome, const std::string& descricao, const std::string& prioridade, const std::string& responsavel);
         Tasks();
         ~Tasks();
         enum class Status {Backlog, ToDo, Doing, Testing, Done};
 
         // getters and setters
+        void setId(int id);
+
+        void setNome(std::string nome);
+
+        void setDescricao(std::string descricao);
+
+        void setPrioridade(std::string prioridade);
+
+        void setResponsavel(std::string responsavel);
+
         int getId() const;
 
         std::string getNome() const;
 
         std::string getDescricao() const;
-        void setDescricao(std::string descricao);
 
         std::string getDataCriacao() const;
 
         std::string getDataEntrega() const;
 
-        std::string getPrioridade();
-        void setPrioridade(std::string prioridade);
+        std::string getPrioridade() const;
 
-        std::string getResponsavel();
-        void setResponsavel(std::string responsavel);
+        std::string getResponsavel() const;
 
         Status getStatus() const;
 

@@ -9,7 +9,7 @@ class Tester : public StakeHolder
         std::string nome;
 
     public:
-        Tester(const std::string& nome, const std::string& projeto, const std::string& team);
+        Tester(const std::string& nome, const std::string& descricao, const std::string& prioridade, const std::string& responsavel);
         ~Tester();
 
         std::string getNome() const;

@@ -8,25 +8,26 @@
 
 class StakeHolder : public Tasks
 {
-    private:
+    protected:
         std::string nome;
-        std::string projeto;
-        std::string team;
-        static std::map<int, Tasks> tasks;
+        std::string descricao;
+        std::string prioridade;
+        std::string responsavel;
         /*std::vector<int> ids;*/
 
     public:
 
         StakeHolder();
-        StakeHolder(const std::string& nome, const std::string& projeto, const std::string& team);
-        ~StakeHolder();
+        StakeHolder(const std::string& nome, const std::string& descricao, const std::string& prioridade, const std::string& responsavel);
+        virtual ~StakeHolder();
+        
+        static std::map<int, Tasks> tasks;
 
         std::string getNome() const;
-        std::string getProjeto() const;
-        std::string getTeam() const;
+        std::string getDescricao() const;
         /* std::vector<int> getIds() const; */
 
-        void cadastrarTarefa ();
+        void cadastrarTarefa (int id, std::vector<Tasks>& tarefas);
 
         void listTasksByStatus();
 

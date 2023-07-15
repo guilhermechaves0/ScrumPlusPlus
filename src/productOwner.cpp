@@ -1,7 +1,7 @@
 #include "../include/productOwner.hpp"
 #include <iostream>
 
-ProductOwner::ProductOwner(const std::string& nome, const std::string& projeto, const std::string& team) : StakeHolder(nome, projeto, team)
+ProductOwner::ProductOwner(const std::string& nome, const std::string& descricao, const std::string& prioridade, const std::string& responsavel) : StakeHolder(nome, descricao, prioridade, responsavel)
 {
 }
 ProductOwner::~ProductOwner()

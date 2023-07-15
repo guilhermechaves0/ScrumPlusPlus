@@ -7,7 +7,7 @@
 class ScrumMaster : public StakeHolder
 {
     public:
-        ScrumMaster(const std::string& nome, const std::string& projeto, const std::string& team);
+        ScrumMaster(const std::string& nome, const std::string& descricao, const std::string& prioridade, const std::string& responsavel);
         ~ScrumMaster();
 
         void priorizarTarefa() override;

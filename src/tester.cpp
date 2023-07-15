@@ -2,7 +2,7 @@
 #include <iostream>
 #include <string>
 
-Tester::Tester(const std::string& nome, const std::string& projeto, const std::string& team) : StakeHolder(nome, projeto, team)
+Tester::Tester(const std::string& nome, const std::string& descricao, const std::string& prioridade, const std::string& responsavel) : StakeHolder(nome, descricao, prioridade, responsavel)
 {
 }
 Tester::~Tester()

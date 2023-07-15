@@ -1,7 +1,7 @@
 #include "../include/scrumMaster.hpp"
 #include "tasks.hpp"
 
-ScrumMaster::ScrumMaster(const std::string& nome, const std::string& projeto, const std::string& team) : StakeHolder(nome, projeto, team)
+ScrumMaster::ScrumMaster(const std::string& nome, const std::string& descricao, const std::string& prioridade, const std::string& responsavel) : StakeHolder(nome, descricao, prioridade, responsavel)
 {
 }
 ScrumMaster::~ScrumMaster()
@@ -10,6 +10,7 @@ ScrumMaster::~ScrumMaster()
 
 void ScrumMaster::priorizarTarefa()
 {
+    prioridade = "alta";
 }
 
 void ScrumMaster::executarTarefa()
