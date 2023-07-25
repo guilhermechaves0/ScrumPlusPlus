@@ -12,13 +12,13 @@
 
 
 ## __Mecanismos de busca:__
-
+<p>A busca é uma operação essencial em muitas aplicações, especialmente quando lidamos com estruturas de dados como listas, dicionários e árvores. No nosso contexto do projeto SCRUM da matéria Linguagem de Programção I, a busca pode ser utilizada para localizar elementos específicos em uma lista de tarefas, um dicionário de equipes ou para encontrar informações relevantes em arquivos de registro.<p>
+<p>A busca linear é uma abordagem simples, porém, tem uma complexidade de tempo O(n), onde "n" representa o número de elementos a serem percorridos. Como nosso projeto é pequenos, essa abordagem pode ser suficiente, mas à medida que o volume de dados aumenta, a busca linear torna-se menos eficiente.<p>
+<p>Já a busca binária é uma opção mais eficiente para listas que utilizamos neste projeto, pois sua complexidade de tempo é O(log n). No entanto, para usar a busca binária, é necessário que a estrutura de dados esteja previamente ordenada, o que pode adicionar um overhead de tempo ao realizar a inserção e manutenção da ordem.<p>
 
 ## __Mecanismos de ordenação:__
-
-
-## __Estruturas de dados:__
-
+<p>A ordenação é crucial quando se deseja apresentar dados de forma organizada, melhorar a eficiência de buscas ou otimizar algoritmos de outros processos no nosso projeto SCRUM. Dentre os algoritmos de ordenação mais comuns, podemos citar o Bubble Sort.<p>
+<p>O Bubble Sort é simples de implementar, porém, tem complexidade de tempo O(n^2) no pior caso, o que o torna pouco eficiente para listas maiores. Mas, em nosso projeto, a lista de tarefas é pequena, logo existe um baixo overhead e uma estabilidade que não altera a ordem relativa das tarefas. O que pode ser importante em algum caso que a duplicidade de tarefas deva ser preservada.<p>
 
 ## __Como compilar:__
 
